@@ -1,1 +1,59 @@
-<p>The mockup begins.</p>
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link href='css/lit.css' rel='stylesheet'>
+<link href='css/util.css' rel='stylesheet'>
+<link href='css/nav.css' rel='stylesheet'>
+<link href='css/font-awesome.min.css' rel='stylesheet'>
+<link href='css/app.css' rel='stylesheet'>
+</head>
+<body>
+<span class='nav' onclick='openNav()' style='background-color:white;font-size:30px;cursor:pointer'>☰ open</span>
+<div class='sidenav' id='mySidenav'>
+<a class='closebtn' href='javascript:void(0)' onclick='closeNav()'>×</a>
+<a href='#'>About</a>
+<a href='#'>Services</a>
+<a href='#'>Clients</a>
+<a href='#'>Contact</a>
+</div>
+<div class='row app-hero'>
+<div class='4 col'></div>
+<div class='4 col'>
+<div class='card app-donation-blurb'>
+<img src='images/TS-Logo.png'>
+<p>
+<a href='https://goo.gl/maps/varfs5HrXH6Pn8XTA'>
+<i class='fa-map-marker'></i>
+2101 New Albany Road • Cinnaminson NJ 08077
+</a>
+<br>
+<a href='tel:8568290658'>
+<i class='fa fa-phone'></i>
+856-829-0658
+</a>
+<br>
+<a href='mailto:templesinainj2101@gmail.com'>
+<i class='fa fa-envelope'></i>
+templesinainj2101@gmail.com
+</a>
+</p>
+<button class='btn'>donate</button>
+</div>
+</div>
+<div class='4 col'></div>
+</div>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+</script>
+</body>
+</html>

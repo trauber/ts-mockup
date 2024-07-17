@@ -1,0 +1,26 @@
+/* using main from nav.css instead
+.app-container {
+    position: relative;
+    width: 100%;
+    margin: 7px;
+}
+*/
+
+.app-hero{
+    height: 100vh;
+    background-image:linear-gradient(rgba(222, 222, 222, 0.55), rgba(222, 222, 222, 0.55)),url('../images/ts-window.png');
+    background-repeat:no-repeat;
+    background-size:auto 100%;
+}
+
+.app-donation-blurb {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 100px;
+    background-color: #FFFFFF;
+}
+
+.app-vertical-align {
+    vertical-align: top;
+}
