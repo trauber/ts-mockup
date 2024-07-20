@@ -1,6 +1,12 @@
 !!!
 %html
   %head
+    %title
+      Temple Sinai of Cinnaminson
+    %meta{:content => "noindex", :name => "robots"}/
+    %meta{:content => "no-cache", "http-equiv" => "cache-control"}/
+    %meta{:content => "0", "http-equiv" => "expires"}/
+    %meta{:content => "no-cache", "http-equiv" => "pragma"}/
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %link{:rel=>"stylesheet",:href=>"css/lit.css"}
@@ -9,16 +15,22 @@
     %link{:href => "css/font-awesome.min.css", :rel => "stylesheet"}/
     %link{:rel=>"stylesheet",:href=>"css/app.css"}
   %body
-    :plain
-      #include "include/nav.html"
-      #include "include/hero.html"
-    :javascript
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-      }
-      
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
-      }
+    #main
+      %section#app-home
+        :plain
+          #include "include/nav.html"
+          #include "include/hero.html"
+      :plain
+        #include "include/about.html"
+        #include "include/services.html"
+        #include "include/education.html"
+      :javascript
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }

@@ -1,9 +1,15 @@
 
 
-%span.nav{:onclick => "openNav()", :style => "background-color:white;font-size:30px;cursor:pointer"} ☰ open
+%span.nav{:onclick => "openNav()", :style => "background-color:white;font-size:30px;cursor:pointer"} ☰ Menu
 #mySidenav.sidenav
   %a.closebtn{:href => "javascript:void(0)", :onclick => "closeNav()"} ×
-  %a{:href => "#"} About
-  %a{:href => "#"} Services
-  %a{:href => "#"} Clients
-  %a{:href => "#"} Contact
+  %a{:href => "index.html#app-home"} Home
+  %a{:href => "index.html#app-about"} About
+  %a{:href => "index.html#app-services"} Services
+  %a{:href => "index.html#app-education"} Education
+  %hr/
+  %a{:href => "happenings.html"} Happenings
+  %a{:href => "afterschool.html"} After School Program
+  %a{:href => "donate.html"} Donate
+  .card#menu-logo
+    %img{:src => "images/TS-Logo.png"}

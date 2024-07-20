@@ -6,11 +6,54 @@
 }
 */
 
-.app-hero{
+
+
+h2 {
+    background-color: #FFFFFF;
+    z-index: 2;
+}
+
+br {
+    clear: both;
+}
+
+/*
+.page-content{
+    margin-left: 7px;
+}
+*/
+
+#menu-logo > img {
+    width: 100%;
+}
+#app-hero {
     height: 100vh;
     background-image:linear-gradient(rgba(222, 222, 222, 0.55), rgba(222, 222, 222, 0.55)),url('../images/ts-window.png');
-    background-repeat:no-repeat;
-    background-size:auto 100%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#app-about {
+    // clear:both; nope
+    height: 100vh;
+    background-repeat: no-repeat;
+    backgound-size: auto 100%;
+}
+
+
+#app-services-cell{
+    // clear:both; nope
+    height: 100vh;
+    background-image: url('../images/hotdogshabbat.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: #FFFFFF;
+}
+
+#app-education {
+    height: 100vh;
+    background-repeat: no-repeat;
+    backgound-size: auto 100%;
 }
 
 .app-donation-blurb {
@@ -24,3 +67,17 @@
 .app-vertical-align {
     vertical-align: top;
 }
+
+details {
+  padding: 10px;
+  background-color: #e4eaef;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+summary {
+  background-color: #7f4a9d;
+  color: white;
+  padding: 10px;
+}
+
