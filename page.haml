@@ -15,12 +15,10 @@
     %link{:href => "css/font-awesome.min.css", :rel => "stylesheet"}/
     %link{:rel=>"stylesheet",:href=>"css/app.css"}
   %body
-    :plain
-      #include "include/nav.html"
+    = File.read("include/nav.html")
     %h1
       #{title}
-    :plain
-      #include "pages/__FILE__"
+    = File.read("pages/__FILE__")
 
     :javascript
       function openNav() {

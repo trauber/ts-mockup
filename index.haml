@@ -17,13 +17,11 @@
   %body
     #main
       %section#app-home
-        :plain
-          #include "include/nav.html"
-          #include "include/hero.html"
-      :plain
-        #include "include/about.html"
-        #include "include/services.html"
-        #include "include/education.html"
+        = File.read("include/nav.html")
+        = File.read("include/hero.html")
+      = File.read("include/about.html")
+      = File.read("include/services.html")
+      = File.read("include/education.html")
       :javascript
         function openNav() {
           document.getElementById("mySidenav").style.width = "250px";

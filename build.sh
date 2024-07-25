@@ -11,8 +11,10 @@ for i in pages/*.haml; do
     head -1 "pages/$base.haml" > tmp.haml
     cat page.haml >> tmp.haml
     sed -i s/__FILE__/$file/ tmp.haml
-    haml tmp.haml | sed 's/_/ /g' | gpp > $file
+    haml render tmp.haml --no-escape-html | sed 's/_/ /g' > $file
+
     rm -f tmp.haml
 done
 
-haml index.haml | sed 's/_/ /g' | gpp > index.html
+
+haml render index.haml --no-escape-html | sed 's/_/ /g' > index.html
